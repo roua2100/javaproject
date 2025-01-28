@@ -3,17 +3,17 @@ node {
             git branch: 'main', url: 'https://github.com/roua2100/javaproject.git'
 	        }
 		    
-		        stage('Build') {
-			        sh '''#!/bin/bash
-				        javac Main.java
-					        '''
-						    }
+    stage('Build') {
+	  sh '''#!/bin/bash
+          javac Main.java
+		  '''
+		 }		      
 						        
-							    stage('Run') {
-							            sh '''#!/bin/bash
-								            java Main
-									            '''
-										        }
-											}
+    stage('Run') {
+	  sh '''#!/bin/bash
+	  java Main
+	    '''
+		}
+			}
 
 
